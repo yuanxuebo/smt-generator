@@ -54,7 +54,7 @@
         <javaClientGenerator targetPackage="org.smt.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
 
         <!-- 需要映射的表 -->
-        <table tableName="t_qrc_type">
+        <table tableName="%">
             <domainObjectRenamingRule searchString="^T"/>
         </table>
     </context>
