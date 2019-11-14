@@ -17,7 +17,7 @@
 ### 注意事项
 + oracle数据库连接驱动不支持通过maven下载，需手动将其安装至本地版本库
 
-+ 由于集成了部分自定义插件，首次使用前务必先执行"mvn clean install"命令将本项目安装至本地版本库，再使用mybatis-generator插件进行代码生成
++ 由于集成了部分自定义插件，并且是从外部文件中读取数据库连接配置，所以无论是首次使用前或是更改数据库连接配置后，均需要先执行"mvn clean install"命令将smt-generator重新安装至本地版本库，再使用mybatis-generator插件进行代码生成
 
 ### 扩展阅读
 + [MyBatis Generator官方文档](http://www.mybatis.org/generator/index.html)
